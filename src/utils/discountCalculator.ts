@@ -11,3 +11,8 @@ export function calculateTax(price: number, category: string): number {
   // Return rounded value
   return Number(taxAmount.toFixed(2));
 }
+// src/utils/discountCalculator.ts
+
+export function calculateDiscount(price: number, discountPercentage: number): number {
+  return +(price * (discountPercentage / 100)).toFixed(2);
+}
